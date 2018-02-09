@@ -1,149 +1,154 @@
-# angular-webpack
+# [Paper Dashboard Angular](https://www.creative-tim.com/product/paper-dashboard-angular)
+[![version][version-badge]][CHANGELOG]
+[![license][license-badge]][LICENSE]
 
-[![Dependency Status](https://david-dm.org/preboot/angular-webpack/status.svg)](https://david-dm.org/preboot/angular-webpack#info=dependencies) [![devDependency Status](https://david-dm.org/preboot/angular-webpack/dev-status.svg)](https://david-dm.org/preboot/angular-webpack#info=devDependencies)
-[![Join the chat at https://gitter.im/preboot/angular-webpack](https://badges.gitter.im/preboot/angular-webpack.svg)](https://gitter.im/preboot/angular-webpack?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+![alt text](https://s3.amazonaws.com/creativetim_bucket/products/58/original/opt_pd_angular_thumbnail.jpg "Paper Dashboard Free")
 
-A complete, yet simple, starter for Angular v2+ using Webpack.
+Paper Dashboard Angular is a Bootstrap Admin Template which combines soft colors with beautiful typography and spacious cards and graphics. It was built on top of Google's [Angular Framework](https://angular.io/) and the HTML version of [Paper Dashboard](https://www.creative-tim.com/product/paper-dashboard). It is a powerful dashboard but it is light and easy to be used. It has enough features to allow you to get the job done, but it is not crowded to the point where you can't find the files for a specific component.
 
-This seed repo serves as an Angular starter for anyone looking to get up and running with Angular and TypeScript fast. Using [Webpack](http://webpack.github.io/) for building our files and assisting with boilerplate. We're also using Protractor for our end-to-end story and Karma for our unit tests.
-* Best practices in file and application organization for [Angular](https://angular.io/).
-* Ready to go build system using [Webpack](https://webpack.github.io/docs/) for working with [TypeScript](http://www.typescriptlang.org/).
-* Testing Angular code with [Jasmine](http://jasmine.github.io/) and [Karma](http://karma-runner.github.io/).
-* Coverage with [Istanbul](https://github.com/gotwarlost/istanbul)
-* End-to-end Angular code using [Protractor](https://angular.github.io/protractor/).
-* Stylesheets with [SASS](http://sass-lang.com/) (not required, it supports regular css too).
-* Error reported with [TSLint](http://palantir.github.io/tslint/) and [Codelyzer](https://github.com/mgechev/codelyzer).
-* Documentation with [TypeDoc](http://typedoc.org/).
+ We like consistency and design that blends into its purpose. Paper Dashboard Angular is a perfect example of our most thoughtful work. It combines over a dozen components and plugins, while looking like everything fits together. For an easy start or inspiration for you project, we have also create a set of example pages, like the user settings or usage graphics.
 
->Warning: Make sure you're using the latest version of Node.js and NPM
+ Paper Dashboard Angular is built using the same design language as [Paper Kit](http://www.creative-tim.com/product/paper-kit), which you can use for the presentation pages of your website. You can easily use them together, or pick between them depending on the project you have.
 
-### Quick start
 
-```bash
-# clone our repo
-$ git clone https://github.com/preboot/angular-webpack.git my-app
+## Links:
 
-# change directory to your app
-$ cd my-app
++ [Live Preview](http://pd-angular.creative-tim.com/dashboard)
++ [Paper Dashboard PRO Angular](https://www.creative-tim.com/product/paper-dashboard-pro-angular)
++ [Paper Kit - For Front End Development](https://www.creative-tim.com/product/paper-kit?ref=github-pd-angular)
 
-# install the dependencies with npm
-$ npm install
 
-# start the server
-$ npm start
+## Quick start
+
+Quick start options:
+
+- [Download from Creative Tim](https://www.creative-tim.com/product/paper-dashboard-angular).
+
+## Terminal Commands
+
+1. Install NodeJs from [NodeJs Official Page](https://nodejs.org/en).
+2. Open Terminal
+3. Go to your file project
+4. Run in terminal: ```npm install -g @angular/cli```
+5. Then: ```npm install```
+6. And: ```ng serve```
+7. Navigate to: [http://localhost:4200/](http://localhost:4200/)
+
+### What's included
+
+Within the download you'll find the following directories and files:
+
 ```
-go to [http://localhost:8080](http://localhost:8080) in your browser.
-
-# Table of Contents
-
-* [Getting Started](#getting-started)
-    * [Dependencies](#dependencies)
-    * [Installing](#installing)
-    * [Developing](#developing)
-    * [Testing](#testing)
-    * [Production](#production)
-    * [Documentation](#documentation)
-* [Frequently asked questions](#faq)
-* [TypeScript](#typescript)
-* [License](#license)
-
-# Getting Started
-
-## Dependencies
-
-What you need to run this app:
-* `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
-* Ensure you're running Node (`v6.x.x`+) and NPM (`3.x.x`+)
-
-## Installing
-
-* `fork` this repo
-* `clone` your fork
-* `npm install` to install all dependencies
-
-## Developing
-
-After you have installed all dependencies you can now start developing with:
-
-* `npm start`
-
-It will start a local server using `webpack-dev-server` which will watch, build (in-memory), and reload for you. The application can be checked at `http://localhost:8080`.
-
-As an alternative, you can work using Hot Module Replacement (HMR):
-
-* `npm run start:hmr`
-
-And you are all set! You can now modify your components on the fly without having to reload the entire page.
-
-## Testing
-
-#### 1. Unit Tests
-
-* single run: `npm test`
-* live mode (TDD style): `npm run test-watch`
-
-#### 2. End-to-End Tests (aka. e2e, integration)
-
-* single run:
-  * in a tab, *if not already running!*: `npm start`
-  * in a new tab: `npm run webdriver-start`
-  * in another new tab: `npm run e2e`
-* interactive mode:
-  * instead of the last command above, you can run: `npm run e2e-live`
-  * when debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite. You can do this with the element explorer.
-  * you can learn more about [Protractor Interactive Mode here](https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively)
-
-## Production
-
-To build your application, run:
-
-* `npm run build`
-
-You can now go to `/dist` and deploy that to your server!
-
-## Documentation
-
-You can generate api docs (using [TypeDoc](http://typedoc.org/)) for your code with the following:
-
-* `npm run docs`
-
-# FAQ
-
-#### Do I need to add script / link tags into index.html ?
-
-No, Webpack will add all the needed Javascript bundles as script tags and all the CSS files as link tags. The advantage is that you don't need to modify the index.html every time you build your solution to update the hashes.
-
-#### How to include external angular libraries ?
-
-It's simple, just install the lib via npm and import it in your code when you need it. Don't forget that you need to configure some external libs in the [bootstrap](https://github.com/preboot/angular-webpack/blob/master/src/main.ts) of your application.
-
-#### How to include external css files such as bootstrap.css ?
-
-Just install the lib and import the css files in [vendor.ts](https://github.com/preboot/angular-webpack/blob/master/src/vendor.ts). For example this is how to do it with bootstrap:
-
-```sh
-npm install bootstrap@next --save
+paper-dashboard-angular
+├── CHANGELOG.md
+├── README.md
+├── LICENSE.md
+├── documentation
+│   ├── css
+│   │   └── documentation.css
+│   └── elements.html
+├── e2e
+├── karma.conf.js
+├── package.json
+├── protractor.conf.js
+├── src
+│   ├── app
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   ├── app.module.ts
+│   │   ├── app.routing.ts
+│   │   ├── dashboard
+│   │   │   ├── dashboard.component.html
+│   │   │   └── dashboard.component.ts
+│   │   ├── icons
+│   │   │   ├── icons.component.html
+│   │   │   └── icons.component.ts
+│   │   ├── maps
+│   │   │   ├── maps.component.html
+│   │   │   └── maps.component.ts
+│   │   ├── notifications
+│   │   │   ├── notifications.component.html
+│   │   │   └── notifications.component.ts
+│   │   ├── shared
+│   │   │   ├── fixedplugin
+│   │   │   │   ├── fixedplugin.component.html
+│   │   │   │   ├── fixedplugin.component.ts
+│   │   │   │   └── fixedplugin.module.ts
+│   │   │   ├── footer
+│   │   │   │   ├── footer.component.html
+│   │   │   │   ├── footer.component.ts
+│   │   │   │   └── footer.module.ts
+│   │   │   └── navbar
+│   │   │       ├── navbar.component.html
+│   │   │       ├── navbar.component.ts
+│   │   │       └── navbar.module.ts
+│   │   ├── sidebar
+│   │   │   ├── sidebar.component.html
+│   │   │   ├── sidebar.component.ts
+│   │   │   └── sidebar.module.ts
+│   │   ├── table
+│   │   │   ├── table.component.html
+│   │   │   └── table.component.ts
+│   │   ├── typography
+│   │   │   ├── typography.component.html
+│   │   │   └── typography.component.ts
+│   │   ├── upgrade
+│   │   │   ├── upgrade.component.html
+│   │   │   └── upgrade.component.ts
+│   │   └── user
+│   │       ├── user.component.html
+│   │       └── user.component.ts
+│   ├── assets
+│   │   ├── css
+│   │   ├── fonts
+│   │   ├── img
+│   │   └── sass
+│   │       ├── paper
+│   │       └── paper-dashboard.scss
+│   ├── environments
+│   │   ├── environment.prod.ts
+│   │   └── environment.ts
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.css
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── typings.d.ts
+├── tsconfig.json
+└── tslint.json
 ```
 
-And in [vendor.ts](https://github.com/preboot/angular-webpack/blob/master/src/vendor.ts) add the following:
+## Useful Links
 
-```ts
-import 'bootstrap/dist/css/bootstrap.css';
-```
+More products from Creative Tim: <https://www.creative-tim.com/bootstrap-themes>
 
-# TypeScript
+Tutorials: <https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w>
 
-> To take full advantage of TypeScript with autocomplete you would have to use an editor with the correct TypeScript plugins.
+Freebies: <https://www.creative-tim.com/products>
 
-## Use a TypeScript-aware editor
+Affiliate Program (earn money): <https://www.creative-tim.com/affiliates/new>
 
-We have good experience using these editors:
+Social Media:
 
-* [Visual Studio Code](https://code.visualstudio.com/)
-* [Webstorm 11+](https://www.jetbrains.com/webstorm/download/)
-* [Atom](https://atom.io/) with [TypeScript plugin](https://atom.io/packages/atom-typescript)
-* [Sublime Text](http://www.sublimetext.com/3) with [Typescript-Sublime-Plugin](https://github.com/Microsoft/Typescript-Sublime-plugin#installation)
+Twitter: <https://twitter.com/CreativeTim>
 
-# License
+Facebook: <https://www.facebook.com/CreativeTim>
 
-[MIT](/LICENSE)
+Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
+
+Instagram: <https://instagram.com/creativetimofficial>
+
+[CHANGELOG]: ./CHANGELOG.md
+
+[LICENSE]: ./LICENSE.md
+
+[version-badge]: https://img.shields.io/badge/version-1.0.1-blue.svg
+
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
